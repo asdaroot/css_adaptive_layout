@@ -14,26 +14,6 @@
     background: #f0f3f4;
   }
   
-  h1 {
-    padding-right: 15px;
-    padding-left: 15px;
-  
-    font-weight: bold;
-    font-size: 3em;
-  }
-  
-  h2 {
-    padding-right: 15px;
-    padding-left: 15px;
-  
-    font-weight: bold;
-    font-size: 2em;
-  }
-  
-  .h-150 {
-    height: 150px;
-  }
-  
   .p-2 {
     padding: 2em;
   }
@@ -64,10 +44,7 @@
   
   .header {
     display: flex;
-  
-    /* BEGIN (write your solution here) */
     flex-wrap: wrap;
-    /* END */
     align-items: center;
     justify-content: space-between;
   
@@ -76,10 +53,7 @@
   
   .nav-horizontal {
     display: flex;
-  
-    /* BEGIN (write your solution here) */
     flex-wrap: wrap;
-    /* END */
     justify-content: space-between;
     margin: 0;
     padding: 0;
@@ -110,18 +84,20 @@
     /* BEGIN (write your solution here) */
     display: flex;
     flex-wrap: wrap;
-    max-width: 1280px;
-    
+    justify-content: space-between; 
     /* END */
+    width: 100%;
+    max-width: 1280px;
+  
+    margin: 0 auto;
+  
     padding-right: 15px;
     padding-left: 15px;
   }
   
   .catalog-item {
     /* BEGIN (write your solution here) */
-    min-width: 200px;
-    flex: 1 1 200px;
-   
+    width: 100%;
     /* END */
     margin: 5px;
     padding: 10px 25px;
@@ -143,4 +119,21 @@
     color: #666;
     font-weight: bold;
   }
+  
+  /* BEGIN (write your solution here) */
+  @media (min-width: 600px) and (max-width: 1199px) {
+    .catalog-item {
+      width: 50%;
+      margin: 0;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .catalog-item {
+      width: 32%;
+      max-width: 400px;
+    }
+  }
+  
+  /* END */
   
