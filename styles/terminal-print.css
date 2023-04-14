@@ -1,0 +1,15 @@
+@media print {
+    :root {
+      --main-bg: #fff;
+      --terminal-bg: none;
+      --highlight-tag: #c62828;
+      --highlight-attr: #936315;
+      --highlight-string: #2e7d32;
+    }
+  
+    .terminal {
+      color: #000;
+  
+      border: 1px solid #000;
+    }
+  }
